@@ -1,0 +1,11 @@
+## GET
+curl -X GET http://localhost:5000/alunos
+
+## POST
+curl -X POST http://localhost:5000/alunos -H "Content-Type: application/json" -d "{\"nome\": \"Carla\", \"curso\": \"Ciência da Computação\"}"
+
+## UPDATE
+curl -X PUT http://localhost:5000/alunos/1 -H "Content-Type: application/json" -d "{\"curso\": \"Engenharia de Software\"}"
+
+## DELETE
+curl -X DELETE http://localhost:5000/alunos/2
